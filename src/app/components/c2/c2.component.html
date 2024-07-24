@@ -1,0 +1,17 @@
+<p>c2 works!</p>
+<button (click)="logout()" >logout</button>
+
+<p>/////////////////////////////////////////////////////////////////</p>
+
+<div class="flex flex-column gap-2">
+    <input 
+        pInputText 
+        id="username" 
+        [formControl]="name" />
+</div>
+
+<button (click)="edit()" >start edit</button>
+
+<p>{{sharedService.canNavigate}}</p>
+
+<a [routerLink]="['/c3']" >go to c3</a>

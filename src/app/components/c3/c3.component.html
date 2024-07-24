@@ -1,0 +1,15 @@
+<p>c3 works!</p>
+
+<div class="" style="display: flex;flex-wrap: wrap;">
+  @for (item of Products; track $index) {
+
+  <div
+    class="card"
+    style="margin: 5px; border: 2px solid; padding: 5px; width: 40%"
+  >
+    <p>{{ item?.id }}</p>
+    <p>{{ item?.title }}</p>
+    <a [routerLink]="['/product-details/'+item.id, {ads : 'sadsasa'}]" [queryParams]="{sadsa : 'sadsa'}" [queryParamsHandling]="'preserve'"  style="padding: 5px; background-color: gray;margin: 5px;" >display</a>
+  </div>
+  }
+</div>
